@@ -1,2 +1,2 @@
 # Demo
-[rotating-navigation-animation](https://beescuit9510.github.io/rotating-navigation-animation/_
+[rotating-navigation-animation](https://beescuit9510.github.io/rotating-navigation-animation/)
