@@ -1,11 +1,18 @@
-document.querySelector('.menu__btn').addEventListener('click', () => {
-  const main = document.querySelector('.main')
-  const nav = document.querySelector('.nav')
+const main = document.querySelector('.main')
+const open = document.querySelector('.open')
+const close = document.querySelector('.close')
+const navList = document.querySelector('.nav__list')
 
-  if (main.classList.contains('main--rotated')) {
-    nav.classList.remove('nav--active')
-    return main.classList.remove('main--rotated')
-  }
-  nav.classList.add('nav--active')
-  main.classList.add('main--rotated')
+open.addEventListener('click', () => {
+  main.classList.add('main--active')
+  open.classList.add('open--active')
+  close.classList.add('close--active')
+  navList.classList.add('nav__list--active')
+})
+
+close.addEventListener('click', () => {
+  main.classList.remove('main--active')
+  open.classList.remove('open--active')
+  close.classList.remove('close--active')
+  navList.classList.remove('nav__list--active')
 })
